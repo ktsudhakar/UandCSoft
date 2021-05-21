@@ -80,6 +80,10 @@ nav {
   height: 75vh;
 }
 
+.slick-item img {
+  height: auto;
+}
+
 .slick-arrow {
   display: inline-block;
   width: 45px;
