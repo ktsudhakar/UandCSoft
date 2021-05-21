@@ -5375,4 +5375,11 @@ img{
 	.consulting-section {
 		padding-top: 50px;
 	}
+	.slider-caption {
+		top: 10%;
+		background: rgb(255 255 255 / 30%);
+		padding: 15px;
+		width: 90%;
+		text-align: center;
+	}
 }
