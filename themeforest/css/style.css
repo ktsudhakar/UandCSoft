@@ -5354,7 +5354,25 @@ img{
   }
 
 @media (max-width: 767px) {
+	.main-slider {
+		padding-bottom: 70px;
+	}
 	.main-slider h2 {
 		font-size: 32px;
+	}
+	.slick-arrow.slick-prev, .slick-arrow.slick-next {
+		bottom: 0;
+	}
+	.slick-arrow.slick-prev {
+		left: 60%;
+		right: inherit;
+		transform: rotate(360deg) translateX(-50%);
+	  }
+	.slick-arrow.slick-next {
+		right: 60%;
+		transform: rotate(-180deg) translateX(-50%);
+	}
+	.consulting-section {
+		padding-top: 50px;
 	}
 }
