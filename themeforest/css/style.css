@@ -5350,7 +5350,7 @@ img{
 	transform: rotate(-45deg);
 	position: absolute;
 	top: 5px;
-	right: 6px;
+	right: 8px;
   }
 
 @media (max-width: 767px) {
