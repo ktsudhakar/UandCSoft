@@ -5382,4 +5382,7 @@ img{
 		width: 90%;
 		text-align: center;
 	}
+	.slider-caption .theme-btn {
+		padding: 10px 20px;
+	}
 }
