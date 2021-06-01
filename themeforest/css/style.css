@@ -738,6 +738,9 @@ img {
 .header-style-two {
   position: fixed;
   height: 60px;
+  left: 0;
+  right: 0;
+  background-color: var(--white);
 }
 
 .main-header .header-top {
