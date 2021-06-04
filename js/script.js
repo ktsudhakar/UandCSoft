@@ -23,8 +23,12 @@
       }
     }
   }
-
   headerStyle();
+
+  $('.scroll-to-top').click(function() {
+    $("html, body").animate({ scrollTop: 0 }, "slow");
+  });
+
   //Sticky Menu
   $(window).scroll(function() {
     var header = $('header');
