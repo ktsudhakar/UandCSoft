@@ -41,6 +41,13 @@
     }
   });
 
+  //Color Change
+
+  $('.dropdown').click(function() {
+    $('body').removeAttr('class');
+    var updateCol = $(this).find('a').attr('data-color');
+    $('body').addClass(updateCol);
+  });
   //Menu Toggle
   function menuToggle() {
     var winWidth = $(window).width();
