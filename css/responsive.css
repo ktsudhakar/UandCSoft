@@ -613,3 +613,8 @@
   }
 
 }
+@media (min-width: 768px) {
+  .menu-header {
+    max-width: calc(100% - 300px);
+  }
+}
