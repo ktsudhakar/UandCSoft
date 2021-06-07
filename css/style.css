@@ -77,7 +77,7 @@ font-family: 'Josefin Sans', sans-serif;*/
   --green1 : #343a40;
   --green2: #162c41;
   --green3: #1d4266;
-  --green4: #1d4266;
+  --green4: #0f3f3a;
 }
 
 html {
@@ -5633,4 +5633,20 @@ header.main-header.header-style-two.scrolled-down, .scrolled-down .menu-header {
 .testimonial-column .owl-controls .owl-nav [class*="owl-"]:hover {
   background-color: var(--red-color) !important;
   border-color: var(--red-color);
+}
+
+.green1 {
+  background-color:var(--green1); 
+}
+
+.green2 {
+  background-color:var(--green2); 
+}
+
+.green3 {
+  background-color:var(--green3); 
+}
+
+.green4 {
+  background-color:var(--green4);
 }
