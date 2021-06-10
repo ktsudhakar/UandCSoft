@@ -431,7 +431,7 @@ img {
 .main-header .header-upper .logo img {
   position: relative;
   display: inline-block;
-  max-width: 150px;
+  max-width: 200px;
   transition: all ease 0.4s;
 }
 
@@ -532,7 +532,6 @@ img {
   line-height: 24px;
   border-top: none;
   font-weight: 700;
-  text-transform: uppercase;
   opacity: 1;
   transition: all 500ms ease;
   -moz-transition: all 500ms ease;
@@ -1356,7 +1355,7 @@ img {
 
 .main-footer .footer-logo img {
   display: block;
-  width: 100px;
+  width: 150px;
 }
 
 .main-footer .footer-column h2 {
