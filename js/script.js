@@ -44,9 +44,14 @@
   //Color Change
 
   $('.dropdown').click(function() {
-    $('body').removeAttr('class');
+    $('body, footer').removeAttr('class');
     var updateCol = $(this).find('a').attr('data-color');
-    $('body').addClass(updateCol);
+    $('footer').addClass('main-footer');
+    $('body, footer').addClass(updateCol);
+  });
+  $('.navigation li > a').click(function() {
+    $('.navigation li').removeClass('current');
+    $(this).parent().addClass('current');
   });
   //Menu Toggle
   function menuToggle() {
