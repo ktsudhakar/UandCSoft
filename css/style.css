@@ -5751,6 +5751,9 @@ header.main-header.header-style-two.scrolled-down, .scrolled-down .menu-header {
 }
 
 @media (max-width: 767px) {
+  .logo-outer .logo {
+    padding-left: 15px;
+  }
   .menu-icon {
     display: none;
   }
