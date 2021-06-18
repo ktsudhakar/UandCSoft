@@ -508,6 +508,7 @@ img {
 
 .main-menu .navbar-collapse {
   padding: 0px;
+  display: block;
 }
 
 .main-menu .navigation {
@@ -828,7 +829,7 @@ img {
 }
 
 .header-style-two .navigation li>a {
-  color: #FFFFFF;
+  color: var(--black);
   font-size: 14px;
   padding: 43px 0px;
   font-family: 'Josefin Sans', sans-serif;
@@ -1241,6 +1242,9 @@ img {
   position: relative;
   margin-bottom: 42px;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .sec-title h2 {
@@ -1808,7 +1812,7 @@ img {
 
 .services-section {
   position: relative;
-  padding: 120px 0px 90px;
+  padding: 100px 0px 90px;
   /*background-color: #f8f8f8;*/
 }
 
@@ -1986,7 +1990,7 @@ img {
 .staff-section {
   position: relative;
   margin-bottom: 40px;
-  padding: 140px 0px 60px;
+  padding: 100px 0px 60px;
 }
 
 .staff-member {
@@ -2082,7 +2086,7 @@ img {
   top: 0px;
   width: 50%;
   height: 100%;
-  background-position: left center;
+  background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -2203,7 +2207,7 @@ img {
 
 .news-section {
   position: relative;
-  margin: 140px 0px 110px 0px;
+  padding: 100px 0px 110px 0px;
 }
 
 .news-block {
@@ -5527,10 +5531,10 @@ img {
   transition: all ease 0.4s;
 }
 .menu-container {
-  background-color: rgba(0, 0, 0, 0.80);
+  background-color: rgba(255, 255, 255, 0.80);
   position: fixed;
   left: 0;
-  padding: 50px 15px 15px 15px;
+  padding: 100px 15px 15px 15px;
   height: 100vh;
   overflow: hidden;
   overflow-y: auto;
@@ -5543,6 +5547,7 @@ img {
   display: block;
   position: relative;
   border: 0;
+  right: 15px;
   width: 35px;
   height: 35px;
   float: none;
@@ -5566,7 +5571,7 @@ img {
   height: 2px;
   display: block;
   border-radius: 0;
-  background: var(--black);
+  background: var(--green);
   transition: ease all 0.4s;
 }
 
@@ -5613,8 +5618,12 @@ img {
   height: 100px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
   margin: 0 auto;
+}
+
+.logo-text {
+  display: flex;
+  justify-content: center;
 }
 
 .menu-right {
@@ -5633,7 +5642,7 @@ img {
 }
 
 header.main-header.header-style-two.scrolled-down {
-  background: var(--black);
+  background: var(--white);
 }
 header.main-header.header-style-two.scrolled-down, .scrolled-down .menu-header {
   height: 60px;
@@ -5642,12 +5651,11 @@ header.main-header.header-style-two.scrolled-down, .scrolled-down .menu-header {
   max-width: 120px;
   transition: all ease 0.4s;
 }
-.scrolled-down .menu-header .logo img.normal-logo {
+
+.menu-header .logo img.logo-icon {
   display: none;
 }
-.scrolled-down .menu-header .logo img.sticky-logo {
-  display: block;
-}
+
 .menu-container::-webkit-scrollbar {
   width: 3px;
 }
@@ -5750,6 +5758,53 @@ header.main-header.header-style-two.scrolled-down, .scrolled-down .menu-header {
   margin-bottom: 0;
 }
 
+.sec-title h2.stick-to-top {
+  display: none;
+}
+.freeze-title .sec-title h2:not(.stick-to-top) {
+  visibility: hidden;
+}
+
+.freeze-title h2.stick-to-top {
+  position: fixed;
+  top: 16px;
+  z-index: 99999;
+  display: inline-block !important;
+  color: var(--red-color);
+  font-size: 20px;
+  padding: 0;
+  background-color: var(--white);
+}
+
+.freeze-title .sec-title {
+  display: flex;
+  align-items: center;
+}
+
+.freeze-title h2.stick-to-top .theme_color {
+  color: var(--green);
+}
+
+.menu-header h1 {
+  font-size: 20px;
+  font-weight: 800;
+  text-transform: uppercase;
+  transition: all ease 0.5s;
+  color: var(--red-color);
+  line-height: 1.4em;
+  font-family: 'Merriweather', serif;
+}
+
+.menu-header h1 span {
+  color: var(--green);
+}
+
+.menu-header h1.move-top {
+  display: none;
+  background-color: var(--white);
+}
+
+
 @media (max-width: 767px) {
   .logo-outer .logo {
     padding-left: 15px;
@@ -5801,7 +5856,20 @@ header.main-header.header-style-two.scrolled-down, .scrolled-down .menu-header {
   .slider-caption .theme-btn {
     padding: 10px 20px;
   }
-  .scrolled-down .navbar-toggle .icon-bar {
-    background-color: var(--white);
+  .fullwidth-section .outer-box {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .logo-text {
+    display: none;
+  }
+  .main-header .header-upper .logo img.logo-icon,
+  .scrolled-up .menu-header .logo img.logo-icon,
+  .scrolled-down .menu-header .logo img.main-logo {
+    display: none;
+  }
+  .scrolled-down .menu-header .logo img.logo-icon {
+    display: block;
+    width: 30px;
   }
 }
