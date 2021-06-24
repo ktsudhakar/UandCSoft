@@ -5326,15 +5326,15 @@ img {
   padding-right: 0px;
 }
 
-.slick-item {
+.main-slider .slick-item {
   position: relative;
 }
 
-.slick-item img {
+.main-slider .slick-item img {
   display: none;
 }
 
-.slider-img-wrapper {
+.main-slider .slider-img-wrapper {
   position: absolute;
   left: 0;
   right: 0;
@@ -5804,6 +5804,23 @@ header.main-header.header-style-two.scrolled-down, .scrolled-down .menu-header {
   background-color: var(--white);
 }
 
+.logo-slider .slick-item {
+  padding: 30px;
+  max-height: 250px;
+}
+
+.logo-slider .slick-item .slider-img-wrapper {
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  border: 1px solid rgb(255 255 255 / 14%);
+  border-radius: 15px;
+  background-color: rgb(255 255 255 / 80%);
+}
+
+.logo-slider .slick-item img {
+  opacity: 0;
+}
 
 @media (max-width: 767px) {
   .logo-outer .logo {
