@@ -176,7 +176,7 @@
   $(".main-slider").slick({
     arrows: false,
     dots: true,
-    autoplay: false,
+    autoplay: true,
     autoplaySpeed: 2500
   });
 
