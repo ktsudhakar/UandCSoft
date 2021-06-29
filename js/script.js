@@ -174,9 +174,17 @@
   }
 
   $(".main-slider").slick({
+    arrows: false,
     dots: true,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 2500
+  });
+
+  var carouselLength = $('.main-slider .slick-dots li').length;
+  $('.main-slider .slick-dots li').each(function() {
+    var carouselWidth = 120 - (carouselLength * 20)
+   $(this).find('button').css('width',carouselWidth + '%');
+   carouselLength = carouselLength - 1;
   });
 
   $(".logo-slider").slick({

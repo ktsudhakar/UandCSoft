@@ -32,6 +32,7 @@
 @import url('https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i');
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Marcellus+SC&display=swap');
 /*font-family: 'Roboto', sans-serif;
 font-family: 'Catamaran', sans-serif;
 font-family: 'Josefin Sans', sans-serif;*/
@@ -148,7 +149,7 @@ p {
 
 .auto-container {
   position: static;
-  max-width: 1200px;
+  max-width: 1430px;
   padding: 0px 15px;
   margin: 0 auto;
 }
@@ -427,6 +428,7 @@ img {
   -ms-transition: all 500ms ease;
   -o-transition: all 500ms ease;
   z-index: 5;
+  max-width: 1400px;
 }
 
 .main-header .header-upper .logo img {
@@ -916,6 +918,7 @@ img {
   line-height: 1.3em;
   text-transform: uppercase;
   font-weight: 800;
+  font-family: 'Marcellus SC', serif;
 }
 
 .main-slider .upper-line {
@@ -1372,6 +1375,7 @@ img {
   padding-bottom: 14px;
   color: #ffffff;
   margin-bottom: 32px;
+  font-family: 'Marcellus SC', serif;
 }
 
 .main-footer .footer-column h2:after {
@@ -2055,6 +2059,7 @@ img {
   -webkit-transition: all 0.3s ease;
   -ms-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
+  font-family: 'Marcellus SC', serif;
 }
 
 .staff-member .inner-box .lower-content h3 a:hover {
@@ -2125,6 +2130,7 @@ img {
   padding-bottom: 13px;
   margin-bottom: 25px;
   font-family: 'Catamaran', sans-serif;
+  font-family: 'Marcellus SC', serif;
 }
 
 .fullwidth-section .content-column .form-title h3:after {
@@ -5715,34 +5721,37 @@ header.main-header.header-style-two.scrolled-down, .scrolled-down .menu-header {
 
 .slick-dots {
   display: flex;
-  align-items: center;
   height: 20px;
   position: absolute;
-  bottom: 20px;
-  left: 0;
+  bottom: 0px;
   right: 0;
-  justify-content: center;
+  flex-flow: column;
+  width: 300px;
+  flex-direction: column-reverse;
 }
 .slick-dots li {
-  width: 80px;
+  width: 100%;
   height: 20px;
   text-align: center;
   display: flex;
   align-items: center;
+  justify-content: flex-end;
   cursor: pointer;
-  margin: 0 5px;
-  
+  margin: 10px 0;
 }
 .slick-dots li button {
   background: none;
   border: 0;
   width: 100%;
-  height: 2px;
+  height: 15px;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 0;
-  background-color: var(--white);
+  background: var(--white);
+  border-right: 0;
+  opacity: 0.5;
+  transition: all ease 0.5s;
 }
 .slick-dots li.slick-active button {
   background-color: var(--red-color);
@@ -5771,9 +5780,11 @@ header.main-header.header-style-two.scrolled-down, .scrolled-down .menu-header {
   z-index: 99999;
   display: inline-block !important;
   color: var(--red-color);
-  font-size: 20px;
+  font-size: 25px;
   padding: 0;
   background-color: var(--white);
+  font-family: 'Marcellus SC', serif;
+  text-transform: capitalize;
 }
 
 .freeze-title .sec-title {

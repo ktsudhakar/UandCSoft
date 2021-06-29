@@ -1,5 +1,11 @@
 /* Bolton HTML Template */
 
+@media only screen and (max-width: 1400px) {
+  .main-header .header-upper {
+    padding-left: 15px;
+  }
+}
+
 @media only screen and (max-width: 1140px) {
 
   .main-header .header-upper .logo-outer,
